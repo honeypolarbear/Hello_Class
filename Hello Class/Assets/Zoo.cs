@@ -11,7 +11,17 @@ public class Zoo : MonoBehaviour
         tom.name = "Åè";
         tom.sound = "³Ä¿Ë!";
 
+        Animal jerry = new Animal();
+        jerry.name = "Á¦¸®";
+        jerry.sound = "ÂïÂï!";
+
+        jerry = tom;
+        jerry.name = "¹ÌÅ°";
+
         tom.PlaySound();
+        jerry.PlaySound();
+
+       
     }
 
     // Update is called once per frame
